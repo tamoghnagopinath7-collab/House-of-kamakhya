@@ -1,0 +1,353 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>House of Kamakhya – Where Tradition Meets Modern Design</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Dark Mode Theme Styles */
+    body {
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+
+    /* Global Left-Aligned Headings & Refined Layout */
+    h1, h2, h3, h4, .section h2, .section-head h2, .hk-gallery h2, .section.vision h2, .newsletter h2 {
+      text-align: left !important;
+      color: #ffffff !important;
+    }
+
+    p, span, a, label {
+      color: #b0b0b0;
+    }
+
+    /* Header Dark Theme */
+    .site-header {
+      background-color: #181818 !important;
+      border-bottom: 1px solid #282828;
+    }
+    .logo, .nav a, .header-actions span {
+      color: #ffffff !important;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 80px 48px;
+      text-align: left;
+    }
+    .hero-text {
+      max-width: 550px;
+      margin: 0;
+      text-align: left;
+    }
+    .hero-text h1 {
+      color: #ffffff !important;
+    }
+    .hero-text p {
+      color: #d0d0d0 !important;
+    }
+
+    /* Left-align Our Vision Section */
+    .section.vision {
+      text-align: left;
+      padding: 60px 48px;
+      background-color: #181818;
+      border-top: 1px solid #282828;
+      border-bottom: 1px solid #282828;
+    }
+    .section.vision p {
+      max-width: 800px;
+      line-height: 1.6;
+      color: #cccccc !important;
+    }
+    
+    /* Box container for Product Cards in Dark Mode */
+    .hk-card {
+      background: #1e1e1e;
+      border: 1px solid #2a2a2a;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 12px;
+    }
+    .hk-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+      border-color: #444;
+    }
+    .hk-card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      display: block;
+      border-radius: 6px;
+      background: #121212;
+    }
+
+    /* Founder's Photo Border Box Height set to 520px */
+    .founder-img-box .hk-card {
+      height: 100%;
+      justify-content: center;
+      background: #1e1e1e;
+      border: 1px solid #2a2a2a;
+    }
+    .founder-img-box .hk-card img {
+      height: 520px;
+      object-fit: cover;
+    }
+
+    .hk-gallery { max-width: 1200px; margin: 0 auto; padding: 40px 16px; font-family: sans-serif; }
+    .hk-gallery h2 { margin: 40px 0 16px; font-size: 1.5rem; color: #ffffff; border-bottom: 2px solid #282828; padding-bottom: 8px; text-align: left; }
+    .hk-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; }
+    .hk-grid.small img {
+      height: 140px;
+      object-fit: contain;
+      background: #1e1e1e;
+    }
+
+    /* Product Info inside the card */
+    .hk-info {
+      padding: 12px 4px 4px 4px;
+      text-align: left;
+    }
+    .hk-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #ffffff;
+      margin: 0 0 6px 0;
+    }
+    .hk-price-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 8px;
+    }
+    .hk-price {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #e5c158; /* Elegant gold tone for dark mode */
+    }
+    .hk-btn {
+      background: #e5c158;
+      color: #121212;
+      border: none;
+      padding: 6px 14px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .hk-btn:hover {
+      background: #f3d06c;
+    }
+
+    /* Left-aligned Newsletter styling in Dark Mode */
+    .newsletter {
+      padding: 60px 48px;
+      text-align: left;
+      background-color: #181818;
+      border-top: 1px solid #282828;
+    }
+    .newsletter p {
+      color: #b0b0b0;
+    }
+    .newsletter-form {
+      display: flex;
+      gap: 12px;
+      max-width: 480px;
+      margin-top: 16px;
+    }
+    .newsletter-form input[type="email"] {
+      flex: 1;
+      padding: 12px 16px;
+      background-color: #121212;
+      border: 1px solid #333;
+      color: #fff;
+      border-radius: 4px;
+      font-size: 0.95rem;
+    }
+    .newsletter-form input[type="email"]::placeholder {
+      color: #777;
+    }
+
+    /* Footer Dark Mode */
+    .footer {
+      background-color: #0d0d0d;
+      color: #999;
+      border-top: 1px solid #222;
+      padding: 40px 48px;
+    }
+    .footer h3, .footer h4 {
+      color: #fff;
+    }
+    .footer a {
+      color: #b0b0b0;
+    }
+    .footer a:hover {
+      color: #e5c158;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
+    <a href="#home" class="logo">House of Kamakhya</a>
+
+    <nav class="nav" id="nav">
+      <a href="#story">About us</a>
+      <a href="#vision">Our vision</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#newsletter">Contact us</a>
+    </nav>
+
+    <div class="header-actions">
+      <span>&#9825; <b id="wishCount">0</b></span>
+      <span>&#128717; <b id="bagCount">0</b></span>
+    </div>
+  </header>
+
+  <main id="home">
+
+    <!-- Hero -->
+    <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://houseofkamakhya.com/wp-content/themes/hello-elementor/assets/images/anvaya-banner.jpg') center/cover no-repeat;">
+      <div class="hero-text">
+        <p class="eyebrow" style="color: #e5c158; font-weight: 600;">New Collection</p>
+        <h1>Bloom : The Floral Collection</h1>
+        <p>Celebrating the beauty of tradition with the power of modern design.</p>
+        <a href="#gallery" class="hk-btn" style="padding: 10px 20px; display: inline-block; text-decoration: none; margin-top: 10px;">Explore Gallery</a>
+      </div>
+    </section>
+
+    <!-- Story -->
+    <section class="section two-col" id="story" style="background: #121212; padding: 60px 48px;">
+      <div>
+        <h2>The Founder Story</h2>
+        <div class="quote" style="color: #cccccc;">
+          <p>“Ever since I was a little girl, fashion has always fascinated me. From styling my sisters and myself by draping some bed sheets, wearing my mom's heels and walking down an imaginary ramp for a fashion week where every time I walked as a designer instilled the sheer joy, beauty, and love for fashion. And today, as I live this passion every day, it feels like more than just a dream come true.</p>
+          <p>Fashion is never just a career choice for me; it is something I feel deeply within. I am constantly drawn to the beauty of fabrics, the emotion behind silhouettes, and the stories that clothing can tell. Being a fashion designer and stylist is not just about creating—it is a journey of passion, patience, and believing in my vision.</p>
+          <p>House of Kamakhya is deeply personal to me. It is not just a brand, but a piece of my soul where tradition, culture, and modern expression come together. Every design I create carries a story, a feeling, and a part of who I am. Through my work, I want people to not just wear my designs, but truly feel them.”</p>
+          <p><strong style="color: #fff;">Founder Rakshitha MH</strong></p>
+          <p style="color: #999;">
+            Diploma in Fashion Apparel Designing<br>
+            BSc in Fashion and Apparel Designing
+          </p>
+        </div>
+        <p style="color: #888; margin-top: 15px;">Each motif is a small reminder of home, patience, and quiet strength.</p>
+      </div>
+      <!-- Founder Photo wrapped in card box with image height 520px -->
+      <div class="founder-img-box">
+        <div class="hk-card">
+          <img loading="lazy" src="https://houseofkamakhya.com/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-26-at-2.53.27-PM.jpeg" alt="Founder Rakshitha MH">
+        </div>
+      </div>
+    </section>
+
+    <!-- Vision -->
+    <section class="section vision" id="vision">
+      <h2>Our Vision</h2>
+      <p>
+        To create pieces that let people express who they are today while carrying
+        the beauty of yesterday. Traditional artistry, modern tailoring, and
+        effortless wearability for daily wear, festive moments, and statement outfits.
+      </p>
+    </section>
+
+    <!-- Complete Image Gallery Section -->
+    <section class="hk-gallery" id="gallery">
+      <h2>Branding & Assets</h2>
+      <div class="hk-grid small">
+        <div class="hk-card"><img loading="lazy" src="https://houseofkamakhya.com/wp-content/uploads/2026/04/Logo.svg" alt="Kamakhya logo"></div>
+        <div class="hk-card"><img loading="lazy" src="https://houseofkamakhya.com/wp-content/uploads/2026/03/cropped-kamakhya-logo-270x270.jpg" alt="Kamakhya favicon"></div>
+      </div>
+
+      <h2>Mandara Anarkali Set</h2>
+      <div class="hk-grid">
+        <div class="hk-card">
+          <img loading="lazy" src="https://houseofkamakhya.com/wp-content/uploads/2026/04/0B0A2405-scaled.webp" alt="Mandara Anarkali Set 1">
+          <div class="hk-info"><p class="hk-title">Mandara Anarkali Set - Look 1</p><div class="hk-price-row"><span class="hk-price">₹7,499</span><button class="hk-btn">Add to Bag</button></div></div>
+        </div>
+        <div class="hk-card">
+          <img loading="lazy" src="https://houseofkamakhya.com/wp-content/uploads/2026/04/0B0A2437-scaled.webp" alt="Mandara Anarkali Set 2">
+          <div class="hk-info"><p class="hk-title">Mandara Anarkali Set - Look 2</p><div class="hk-price-row"><span class="hk-price">₹8,250</span><button class="hk-btn">Add to Bag</button></div></div>
+        </div>
+        <div class="hk-card">
+          <img loading="lazy" src="https://houseofkamakhya.com/wp-content/uploads/2026/04/0B0A2552-scaled.webp" alt="Mandara Anarkali Set 3">
+          <div class="hk-info"><p class="hk-title">Mandara Anarkali Set - Look 3</p><div class="hk-price-row"><span class="hk-price">₹6,890</span><button class="hk-btn">Add to Bag</button></div></div>
+        </div>
+        <div class="hk-card">
+          <img loading="lazy" src="https://houseofkamakhya.com/wp-content/uploads/2026/04/0B0A2421-scaled.webp" alt="Mandara Anarkali Set 4">
+          <div class="hk-info"><p class="hk-title">Mandara Anarkali Set - Look 4</p><div class="hk-price-row"><span class="hk-price">₹9,120</span><button class="hk-btn">Add to Bag</button></div></div>
+        </div>
+        <div class="hk-card">
+          <img loading="lazy" src="https://houseofkamakhya.com/wp-content/uploads/2026/04/0B0A2515-scaled.webp" alt="Mandara Anarkali Set 5">
+          <div class="hk-info"><p class="hk-title">Mandara Anarkali Set - Look 5</p><div class="hk-price-row"><span class="hk-price">₹5,450</span><button class="hk-btn">Add to Bag</button></div></div>
+        </div>
+        <div class="hk-card">
+          <img loading="lazy" src="https://houseofkamakhya.com/wp-content/uploads/2026/04/0B0A2550-scaled.webp" alt="Mandara Anarkali Set 6">
+          <div class="hk-info"><p class="hk-title">Mandara Anarkali Set - Look 6</p><div class="hk-price-row"><span class="hk-price">₹7,990</span><button class="hk-btn">Add to Bag</button></div></div>
+        </div>
+      </div>
+
+      <h2>Japa Kurta Set</h2>
+      <div class="hk-grid">
+        <div class="hk-card">
+          <img loading="lazy" src="https://houseofkamakhya.com/wp-content/uploads/2026/03/0B0A2334-1-1-scaled.webp" alt="Japa Kurta Set 1">
+          <div class="hk-info"><p class="hk-title">Japa Kurta Set - Look 1</p><div class="hk-price-row"><span class="hk-price">₹6,300</span><button class="hk-btn">Add to Bag</button></div></div>
+        </div>
+        <div class="hk-card">
+          <img loading="lazy" src="https://houseofkamakhya.com/wp-content/uploads/2026/04/0B0A2387-scaled.webp" alt="Japa Kurta Set 2">
+          <div class="hk-info"><p class="hk-title">Japa Kurta Set - Look 2</p><div class="hk-price-row"><span class="hk-price">₹8,450</span><button class="hk-btn">Add to Bag</button></div></div>
+        </div>
+        <div class="hk-card">
+          <img loading="lazy" src="https://houseofkamakhya.com/wp-content/uploads/2026/04/0B0A2357-scaled.webp" alt="Japa Kurta Set 3">
+          <div class="hk-info"><p class="hk-title">Japa Kurta Set - Look 3</p><div class="hk-price-row"><span class="hk-price">₹5,790</span><button class="hk-btn">Add to Bag</button></div></div>
+        </div>
+        <div class="hk-card">
+          <img loading="lazy" src="https://houseofkamakhya.com/wp-content/uploads/2026/04/0B0A2365-scaled.webp" alt="Japa Kurta Set 4">
+          <div class="hk-info"><p class="hk-title">Japa Kurta Set - Look 4</p><div class="hk-price-row"><span class="hk-price">₹9,800</span><button class="hk-btn">Add to Bag</button></div></div>
+        </div>
+      </div>
+
+      <h2>Mallika Kurta Set</h2>
+      <div class="hk-grid">
+        <div class="hk-card">
+          <img loading="lazy" src="https://houseofkamakhya.com/wp-content/uploads/2026/04/0B0A2287-scaled.webp" alt="Mallika Kurta Set 1">
+          <div class="hk-info"><p class="hk-title">Mallika Kurta Set - Look 1</p><div class="hk-price-row"><span class="hk-price">₹6,150</span><button class="hk-btn">Add to Bag</button></div></div>
+        </div>
+        <div class="hk-card">
+          <img loading="lazy" src="https://houseofkamakhya.com/wp-content/uploads/2026/04/0B0A2292-scaled.webp" alt="Mallika Kurta Set 2">
+          <div class="hk-info"><p class="hk-title">Mallika Kurta Set - Look 2</p><div class="hk-price-row"><span class="hk-price">₹7,320</span><button class="hk-btn">Add to Bag</button></div></div>
+        </div>
+        <div class="hk-card">
+          <img loading="lazy" src="https://houseofkamakhya.com/wp-content/uploads/2026/04/0B0A2319-scaled.webp" alt="Mallika Kurta Set 3">
+          <div class="hk-info"><p class="hk-title">Mallika Kurta Set - Look 3</p><div class="hk-price-row"><span class="hk-price">₹8,900</span><button class="hk-btn">Add to Bag</button></div></div>
+        </div>
+        <div class="hk-card">
+          <img loading="lazy" src="https://houseofkamakhya.com/wp-content/uploads/2026/04/0B0A2305-scaled.webp" alt="Mallika Kurta Set 4">
+          <div class="hk-info"><p class="hk-title">Mallika Kurta Set - Look 4</p><div class="hk-price-row"><span class="hk-price">₹5,200</span><button class="hk-btn">Add to Bag</button></div></div>
+        </div>
+      </div>
+
+      <h2>Kumuda Cord Set</h2>
+      <div class="hk-grid">
+        <div class="hk-card">
+          <img loading="lazy" src="https://houseofkamakhya.com/wp-content/uploads/2026/04/0B0A2130-scaled.webp" alt="Kumuda Cord Set 1">
+          <div class="hk-info"><p class="hk-title">Kumuda Cord Set - Look 1</p><div class="hk-price-row"><span class="hk-price">₹6,450</span><button class="hk-btn">Add to Bag</button></div></div>
+        </div>
+        <div class="hk-card">
+          <img loading="lazy" src="https://houseofkamakhya.com/wp-content/uploads/2026/04/0B0A2097-scaled.webp" alt="Kumuda Cord Set 2">
+          <div class="hk-info"><p class="hk-title">Kumuda Cord Set - Look 2</p><div class="hk-price-row"><span class="hk-price">₹8,100</span><button class="hk-btn">Add to Bag</button></div></div>
+        </div>
+        <div class="hk-card">
+          <img loading="lazy" src="https://houseofkamakhya.com/wp-content/uploads/2026/04/0B0A2069-scaled.webp" alt="Kumuda Cord Set 3">
+          <div class="hk-info"><p class="hk-title">Kumuda Cord Set - Look 3</p><div
